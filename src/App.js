@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+// RICORDIAMOCI DI INCLUDERE IN APP.JS IL FILE CSS DI BOOTSTRAP PRESENTE IN NODE_MODULES
+// !!!
+import 'bootstrap/dist/css/bootstrap.min.css'
+// !!!
+import './App.css'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        {/* ora siete liberi di utilizzare le classi di bootstrap */}
+        <p className="text-success mt-5 border border-danger">
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -19,7 +24,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
